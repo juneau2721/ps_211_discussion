@@ -354,9 +354,12 @@ align: l-lt-lt
 </v-clicks>
 
 :: right ::
-- Inside that folder, make a new R Markdown file:
-  - Filename: lastname_firstname_discussion1
-  - Text: your name and the date
-  - Code chunk: `mean(c(1,2,3))`
+<v-clicks>
+
+- Inside that folder, download `grade_calculator.Rmd` from Slack
+  - The function already works! Do not edit `calculate_grade`
+  - Run each code section as-is
+  - Then, go to the bottom section `"Change the numbers below"` and explore what happens when you change the numbers!
 - Knit the file to HTML
-- Upload your result here:
+
+</v-clicks>
