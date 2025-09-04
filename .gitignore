@@ -1,6 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.vite/
+
+# Logs and caches
 *.log
-node_modules
-*-export*
-dist
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode/*
 .DS_Store
-.Rproj.user
+
+# Slidev-specific
+slidev-exported.pdf
+slidev-exported/*.html
+
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
