@@ -1,2 +1,7 @@
-# Don’t sync dependencies
-node_modules/
+node_modules
+.pnpm-store
+dist
+.vite
+.next
+.output
+.cache
