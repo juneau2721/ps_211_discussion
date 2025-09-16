@@ -5,13 +5,13 @@ layout: cover
 color: indigo-light
 theme: neversink
 mdc: true
-neversink_slug: PS 211 - Discussion 2
-exportFilename: ps211_fall2025_discussion2
+neversink_slug: PS 211 - Discussion 3
+exportFilename: ps211_fall2025_discussion3
 ---
 
 # PS 211: Introduction to Experimental Design
 ## Fall 2025 · Section C1
-### Discussion 2: Summaries of Lectures 1–3
+### Discussion 3: Lectures 4–5 and Poster Brainstorming
 
 ---
 layout: top-title
@@ -24,8 +24,9 @@ align: lt
 
 :: content ::
 - Attendance  
-- Recap of Lectures 1–3  
-- Worksheet and icebreakers
+- Recap of Lectures 4–5  
+- Worksheet and icebreakers  
+- Brainstorming research ideas  
 - Discussion poster project
 
 ---
@@ -35,14 +36,16 @@ align: lt
 ---
 
 :: title ::
-# Lecture 1: Course Overview
+# Lecture 4: Central Tendency
 
 :: content ::
-- Introductions (Kate & Juneau)  
-- Logistics: lectures, discussions, Slack  
-- No textbook → we use R & RStudio <!-- 【32†lecture1†L280-L289】 -->  
-- Course goals: describe variables, samples, hypothesis testing, R analysis, interpretation, communication, limits of statistics <!-- 【32†lecture1†L236-L249】 -->  
-- Grading: exams (70%), homework (10%), data write-up (10%), discussion (10%) <!-- 【32†lecture1†L288-L305】 -->  
+- Central tendency = “center” of dataset
+- **Mean**: arithmetic average; sensitive to outliers
+- **Median**: middle score; 50th percentile; robust to outliers
+- **Mode**: most common score; can be unimodal, bimodal, multimodal
+- In normal distribution → mean = median = mode
+- In skewed distributions → mean, median, mode differ
+- Outliers distort mean; median less affected
 
 ---
 layout: top-title
@@ -51,18 +54,15 @@ align: lt
 ---
 
 :: title ::
-# Lecture 1: Science & Statistics
+# Lecture 4: Variability
 
 :: content ::
-
-- **Data** = values that convey information <!-- 【32†lecture1†L703-L712】 -->  
-  - E.g., numbers, words, observations
-  - Used for calculation, reasoning, discussion, decision-making
-- **"Statistics"** can mean data, summaries of data, or methods for analysis <!-- 【32†lecture1†L716-L724】 -->  
-- Statistics are used constantly in daily life: medicine, finance, policy, news, science <!-- 【32†lecture1†L728-L739】 -->  
-- Goals of science: describe phenomena, predict relationships, and explain these relationships <!-- 【32†lecture1†L747-L757】 -->  
-- Scientific method: observe, review literature, hypothesis, design, collect/analyze data, conclude & communicate <!-- 【32†lecture1†L763-L784】 -->  
-- Publication process: peer review, revision, publication <!-- 【32†lecture1†L795-L814】 -->  
+- Variability = spread of scores
+- **Range**: highest – lowest
+- **Interquartile Range (IQR)**: Q3 – Q1, middle 50%
+- **Variance**: average squared deviation from mean
+- **Standard deviation (SD)**: square root of variance
+- Boxplots: show median, quartiles, IQR, outliers
 
 ---
 layout: top-title
@@ -71,15 +71,14 @@ align: lt
 ---
 
 :: title ::
-# Lecture 2: Variables & Research
+# Lecture 5: Sampling
 
 :: content ::
-- **Continuous**: any value, can have fractions (height, weight) <!-- 【33†lecture2†L37-L46】 -->  
-- **Discrete**: specific values only (number of pets) <!-- 【33†lecture2†L37-L46】 -->  
-- **Nominal**: categories (names only) <!-- 【33†lecture2†L53-L61】 -->  
-- **Ordinal**: rankings, ordered but no fractions <!-- 【33†lecture2†L53-L61】 -->  
-- **Interval**: equal intervals, no true zero (temperature °F) <!-- 【33†lecture2†L69-L78】 -->  
-- **Ratio**: equal intervals, true zero (reaction time = 0) <!-- 【33†lecture2†L69-L78】 -->  
+- Populations: entire group of interest
+- Samples: subset used to estimate population
+- **Random sample**: equal chance of selection; representative but hard
+- **Convenience sample**: easier, common in psychology; less representative
+- **Random assignment**: within experiments, ensures comparability of groups
 
 ---
 layout: top-title
@@ -88,20 +87,15 @@ align: lt
 ---
 
 :: title ::
-# Lecture 2: Research Methods
+# Lecture 5: Probability
 
 :: content ::
-- Non-experimental: naturalistic, case study, surveys <!-- 【33†lecture2†L94-L104】 -->  
-- Experimental: manipulation of IV(s), measure effect on DV(s) <!-- 【33†lecture2†L110-L118】 -->  
-- IV = manipulated variable, levels = values it takes <!-- 【33†lecture2†L124-L134】 -->  
-- DV = outcome variable <!-- 【33†lecture2†L124-L134】 -->  
-- Variables must be defined (easy: age; harder: happiness?)
-  - Abstract, hard-to-define variables can be carefully defined **operationally**
-  - Operational definitions specify the observations or procedures used to measure/manipulate a variable
-- Variables can have levels
-  - Discrete example = type of pet could be dog, cat, hamset
-  - Continuous example = reaction time could range from 0 to infinity
-- Graphs: IV on x-axis, DV on y-axis <!-- 【33†lecture2†L150-L157】 -->  
+- Probability = likelihood of outcome (0 to 1)
+- Trial = repetition (e.g., dice roll); outcome = result; success = outcome of interest
+- Independent trials: outcomes don’t affect each other (coin flips)
+- Experimental probability: based on repeated trials
+- Theoretical probability: based on known outcomes
+- Common errors: gambler’s fallacy, overestimating rare events, confirmation bias
 
 ---
 layout: top-title
@@ -110,54 +104,12 @@ align: lt
 ---
 
 :: title ::
-# Lecture 2: Correlation vs Experiment
+# Lecture 5: Hypothesis Testing
 
 :: content ::
-- **Correlational studies**: variables observed as they naturally occur, cannot show causality <!-- 【33†lecture2†L164-L174】 -->  
-- **Confound** = variable that varies with IV and affects DV, making it hard to isolate the causal effect of IV on DV <!-- 【33†lecture2†L232-L239】 -->  
-- **Experiments**: random assignment helps reduce confounds and allows causal inference <!-- 【33†lecture2†L245-L253】 -->  
-- **Reliability**: consistency of a measure <!-- 【33†lecture2†L388-L396】 -->  
-- **Validity**: accuracy of a measure <!-- 【33†lecture2†L388-L396】 -->  
-- **Between-Subjects** participants experience only one level of the IV
-- **Within-Subjects** participants experience all levels of the IV
-
----
-layout: top-title
-color: indigo-light
-align: lt
----
-
-:: title ::
-# Lecture 3: Descriptive vs Inferential
-
-:: content ::
-- **Descriptive stats**: summarize and organize data <!-- 【34†lecture3†L22-L33】 -->  
-- **Inferential stats**: use sample data to make inferences about a population <!-- 【34†lecture3†L22-L33】 -->  
-- Raw data = original numbers, hard to interpret alone <!-- 【34†lecture3†L53-L62】 -->  
-- Frequency distributions help visualize data: tables, grouped tables, histograms <!-- 【34†lecture3†L78-L87】 -->  
-- There are many correct ways to present data
-  - But our goal is to choose the **most useful** ways!
-
----
-layout: top-title
-color: indigo-light
-align: lt
----
-
-:: title ::
-# Lecture 3: Visualizing Data
-
-:: content ::
-- **Frequency table**: list values + counts <!-- 【34†lecture3†L95-L103】 -->  
-- **Grouped frequency table**: intervals (bins) for ranges <!-- 【34†lecture3†L146-L155】 -->  
-- **Histogram**: graph of grouped frequency table; bars touch, continuous variables only <!-- 【34†lecture3†L197-L205】 -->  
-- **Distribution** = how values are spread or clustered <!-- 【34†lecture3†L263-L270】 -->  
-- **Normal distribution**: symmetric, bell-shaped <!-- 【34†lecture3†L276-L283】 -->  
-- **Skew**:  
-  - Positive skew → tail right, floor effect <!-- 【34†lecture3†L296-L304】 -->  
-  - Negative skew → tail left, ceiling effect <!-- 【34†lecture3†L307-L315】 -->  
-- Bar graphs = categorical data <!-- 【34†lecture3†L441-L449】 -->  
-- Scatterplots = relationship between two variables <!-- 【34†lecture3†L462-L471】 -->  
+- Descriptive stats: summarize samples
+- Inferential stats: generalize to populations
+- Hypothesis testing uses probability to judge if sample result is likely under null hypothesis
 
 ---
 layout: top-title
@@ -171,23 +123,51 @@ align: lt
 
 :: content ::
 
-1. Introduction: In groups of 3-4, share your **name** and one example of a **variable** you’ve noticed in daily life (e.g., coffee cups per day, hours of sleep). Say whether it’s **discrete** or **continuous**.
+1. Central Tendency: Your group has these exam scores — 70, 80, 90, 100.  
+   a. What is the **mean**?  
+   b. What is the **median**?  
+   c. If we add an outlier score of 0, which measure changes the most?  
 
-2. Come up with two examples of **ordinal variables** that could show up in a BU student survey.  
-   a. For one of them, explain why it is ordinal and not interval.  
+2. Variability: Imagine two classes both have a mean exam score of 80.  
+- Class A: scores are 79, 80, 81  
+- Class B: scores are 60, 80, 100  
+   a. Which class has higher **variance/SD**?  
+   b. Which class’s scores are more consistent?  
 
-3. Methods: As a group, come up with an **operational definition** for a tricky variable (e.g., “happiness,” “stress,” “study effort”).  
+3. Sampling: A researcher wants to study BU students’ sleep habits.  
+   a. Is recruiting volunteers from Psych 101 a **random** or **convenience** sample?  
+   b. What is one advantage and one disadvantage of that choice?  
 
-4. Studies: BU finds that students who sleep more have higher GPAs.  
-   a. Is this correlational or experimental?  
-   b. What would a confound be?  
-   c. How could you redesign this as a true experiment?  
+4. Random Assignment: Suppose you flip a coin to decide which students complete a math puzzle or a word puzzle.  
+   a. What does random assignment accomplish in this experiment?  
+   b. How is this different from random sampling?  
 
-5. Visualization: Sketch a **positively skewed** and a **negatively skewed** histogram of exam scores.  
-   a. How does the shape differ between the two?  
-   b. In what situation might you prefer a **bar graph** instead of a histogram?  
-   
-6. Wrap-up: What is the most useful concept from lecture so far? The easiest? The most challenging?
+5. Probability: You flip a fair coin three times.  
+   a. What is the probability of getting exactly 2 heads?  
+   b. What is the probability of getting at least 1 tail?  
+
+6. Wrap-up: Which concept from today’s lectures do you think will be **most important** for the upcoming exam?
+
+---
+layout: top-title
+color: indigo-light
+align: lt
+---
+
+:: title ::
+
+# How to Brainstorm Research Ideas
+
+:: content ::
+
+- Start with **broad psych topics** that interest you (e.g., sleep, stress, social media, learning).  
+- Ask: *What variables could we measure or manipulate?*  
+  - IV = what we change (e.g., study environment, type of task)  
+  - DV = what we measure (e.g., accuracy, reaction time, mood)  
+- Look for **connections to everyday life** or current issues.  
+- Keep it **simple and testable** within the scope of this class.
+  - Although we will not be conducting experiments ourselves, our hypothetical study should still be attainable, understandable, and clearly tied to measurable variables.
+- Be creative — but ground your ideas in **experimental design concepts** we’ve learned so far, so you can connect them directly to your poster.
 
 ---
 layout: top-title
@@ -202,10 +182,9 @@ align: lt
 :: content ::
 
 - In small groups, you will come up with a research hypothesis, conduct a literature review, and write hypothetical methods, results, and discussion sections to be presented on a poster at the end of the semester.
-- **Next week**, we will form groups of 3-4 and brainstorm research ideas
+- **This week**, we will form groups of 3-4 and brainstorm research ideas
 - Attend discussion! --> much easier to coordinate
   - Goal is no work outside of discussion section
-
 
 ---
 layout: top-title-two-cols
@@ -271,7 +250,7 @@ align: lt
 
 :: title ::
 
-# Outline for future weeks
+# Discussion poster project outline
 
 :: content ::
 - Discussion 3: Form groups and brainstorm research ideas
