@@ -1,6 +1,8 @@
 ---
-title: "PS 211: Grade Calculator"
-output: html_document
+title: 'PS 211: Grade Calculator'
+output:
+  pdf_document: default
+  html_document: default
 date: "2025-08-30"
 ---
 
