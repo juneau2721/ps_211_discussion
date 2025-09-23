@@ -39,11 +39,13 @@ align: lt
 # Exam bubble sheet instructions
 
 :: content ::
-- Bring a pen or pencil
+- Bring a blue/black pen or pencil
 - **Name in all caps**
 - Must fill out **BU ID #**
 - Must fill out **Exam Version**
 - If you miss any of these things, then grading will be delayed for the entire class 
+
+<img src="/images/bubblesheet_instructions.png" alt="GradeScope bubblesheet instructions" class="w-3/4 rounded-lg border-2 border-indigo-200 shadow-lg" />
 
 ---
 layout: top-title
