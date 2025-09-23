@@ -19,5 +19,5 @@ exportFilename: ps211_fall2025_discussion_quickz
 *(Works better on computers than phones)*
 
 - Some qs are exam-level difficulty, others emphasize big-picture concepts
-- Please practice writing your FIRSTNAME L. in all caps
+- Please practice writing your FIRSTNAME LASTNAME in all caps
 - 🎁 Yes, there will be prizes.
