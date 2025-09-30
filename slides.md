@@ -11,7 +11,7 @@ exportFilename: ps211_fall2025_discussion4
 
 # PS 211: Introduction to Experimental Design
 ## Fall 2025 · Section C1
-### Discussion 4: Exam 1 Review & Poster Hypotheses
+### Discussion 5: Lectures 6-7 Review & Finalizing Poster Hypotheses
 
 ---
 layout: top-title
@@ -24,10 +24,9 @@ align: lt
 
 :: content ::
 - Attendance -- please sign the sheet at the front
-- I will cover Lecture 6 (not on the exam) next week (after the exam)
-- Exam bubble sheet instructions
-- Poster project: forming hypotheses
-- Class quiz game  
+- Lectures 6 and 7 review
+- Worksheet
+- Finalize poster hypotheses
 
 ---
 layout: top-title
@@ -36,16 +35,64 @@ align: lt
 ---
 
 :: title ::
-# Exam bubble sheet instructions
+# Lecture 6: The Normal Curve & Z Scores
 
 :: content ::
-- Bring a blue/black pen or pencil
-- **Name in all caps**
-- Must fill out **BU ID #** and **Exam Version**
-- If you miss any of these things, then grading will be delayed for the entire class
+- Normal distributions: bell-shaped, symmetric, unimodal  
+- Outliers/deviations from normal → can flag anomalies (e.g., fraud detection)  
+- Standardization: convert raw scores → **z scores** (SDs from mean)  
+- Z distribution: mean = 0, SD = 1  
+- Compare across scales: z tells us relative standing  
+- Percentiles: proportion of scores below a given z  
 
-<img src="/images/bubblesheet_instructions.jpg" alt="GradeScope bubblesheet instructions" width="700" height="400" class="rounded-lg border-2 border-indigo-200 shadow-lg" />
+---
+layout: top-title
+color: indigo-light
+align: lt
+---
 
+:: title ::
+# Lecture 7: Central Limit Theorem & Standard Error
+
+:: content ::
+- **Central Limit Theorem (CLT):** distribution of sample means ≈ normal if n is large  
+- Even if raw scores aren’t normal, sample means will be  
+- Distribution of means = less variable than raw scores  
+- **Standard Error (SE):** SD of sample means  
+  - Formula: SE = s / √n  
+  - Larger samples → smaller SE → more precise estimates  
+
+---
+layout: top-title-two-cols
+color: indigo-light
+align: l-lt-lt
+---
+
+:: title ::
+# Worksheet for Today
+
+:: left ::
+1. Z Scores: A test has M = 70, SD = 10. You got an 85. 
+  - What is the z score?  
+  - Is it above/below average?  
+
+2. CLT & SE: We have two samples from same population: n = 9 vs. n = 100.  
+- Which has smaller SE? Why?  
+
+3. Normal Curve  
+- If z = 1, what % of scores are below it?  
+- If z = −1, what % are above it?  
+
+:: right ::
+4. Hypothesis Testing  
+- Suppose μ = 50, σ = 8.  
+- Sample (n = 16): M = 46.  
+  - Compute SE.  
+  - Compute z.
+
+5. Wrap-up  
+- Share one real-life case where you’d want to compare two groups (IV levels). 
+- How could you phrase it as H₀ vs. H₁?  
 
 ---
 layout: top-title
@@ -55,7 +102,7 @@ align: lt
 
 :: title ::
 
-# Poster Project: broad topics → testable hypotheses
+# Last week: broad topics -> testable hypotheses
 
 :: content ::
 <div style="line-height:.8; font-size:0.9em">
@@ -71,6 +118,25 @@ align: lt
 - During class, check in with me so we can workshop your group's hypothesis
 </div>
 
+---
+layout: top-title
+color: indigo-light
+align: lt
+---
+
+:: title ::
+# This week: Refine topic and compile references
+
+:: content ::
+- Use Google Scholar or BU Library databases to search your topic  
+- Start with **review articles** → they summarize many studies at once  
+- Look for peer-reviewed journal articles, not blogs or random websites  
+- Skim the abstract & conclusion first: does it clearly connect to your hypothesis?  
+- Collect at least **3–5 solid references** this week to support your poster  
+- Keep track of them in a shared doc (include citation info!) and show me
+    - You may use any citation style as long as it is consistent
+    - That said, I am most familiar with APA
+- Tip: “cited by” on Google Scholar helps you find more recent follow-ups  
 
 ---
 layout: top-title
@@ -104,7 +170,6 @@ align: l-lt-lt
 # Checklist -- what should my poster have?
 
 :: left ::
-
 - Introduction
   - Current literature
   - Research question
@@ -136,7 +201,6 @@ align: l-lt-lt
 # Design your figures and posters to be easily understood!
 
 :: left ::
-
 Good:
 https://scholar.dominican.edu/ug-student-posters/101/
 
@@ -160,6 +224,7 @@ align: lt
 # Discussion poster project outline
 
 :: content ::
+
 - Discussion 3: Form groups and brainstorm research ideas
 - Discussion 4: Research poster topics and form hypotheses
 - Discussion 5: Refine topic and compile references
