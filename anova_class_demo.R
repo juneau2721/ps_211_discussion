@@ -1,0 +1,70 @@
+# PS211: t Test Demo
+# 11/10/25
+
+
+### ONE-WAY BETWEEN-GROUPS ANOVA ###
+#We use a one-way between-groups ANOVA when comparing more than two samples in a 
+# between-groups (between-subjects) experimental design. 
+# In other words, you have more than two groups, with different people in each group.  
+
+#Example: We conduct a study on the number of hours students studied for a final exam, 
+#in an Intro to Psychology course, by their college year.  
+
+# First, we can create our data. In R, we use the "c" function to create a list of values.
+first_year_hours <- c(2, 3, 4)
+second_year_hours <- c(4, 4, 6)
+third_year_hours <- c(3, 8, 9)
+
+# Next, we can combine these into a data frame using the data.frame function.
+study_data <- data.frame(
+  participant = c(1:9),
+  year = factor(rep(c("First Year", "Second Year", "Third Year"), each = 3)),
+  hours = c(first_year_hours, second_year_hours, third_year_hours)
+)
+
+# we can then use the "aov" function to run an ANOVA. We will store the result in a variable
+# called "anova_result."
+anova_result <- aov(hours ~ year, data = study_data)
+
+#If we type "anova_result" into the console, we will see some information about the ANOVA:
+anova_result
+
+# When you print this, you can see the two Sum of Squares terms: 
+# The "year" term shows the sum of square for our between-groups variable.
+# The "residuals" term shows the leftover variance, meaning the variance not explained by our
+# between-groups variable. This corresponds to the within-group variance.
+
+# However, to see the full ANOVA table, we need to use the "summary" function:
+summary(anova_result)
+
+# Compute the effect size (eta squared) (don't worry about this code, but run to see the output)
+anova_summary <- summary(anova_result)[[1]]
+ss_between <- anova_summary$`Sum Sq`[1]
+ss_within  <- anova_summary$`Sum Sq`[2]
+eta_squared <- ss_between / (ss_between + ss_within)
+eta_squared
+
+
+# Run post-hoc tests (Tukey HSD) to see which groups differ. 
+# To do this, we will use the TukeyHSD funtion.
+post_hoc <- TukeyHSD(anova_result)
+
+#print out results of posthoc test
+post_hoc
+
+# What does this tell us?
+# The output shows the pairwise comparisons between each group.
+# For example, the first row shows the comparison between First Year and Second Year students.
+# The "diff" column shows the difference in means between the two groups (1.33).
+# The "p adj" column shows the adjusted p-value for this comparison (0.1847). 
+# Since this p-value is greater than .05, we can conclude that there is no 
+# statistically significant difference in study hours between First Year and Second Year students.
+# The second row shows the comparison between First Year and Third Year students,
+# and the third row shows the comparison between Second Year and Third Year students.
+
+# Importantly, this is *similar* to running three-paired t tests, but not the same.
+# By using the Tukey HSD test, we are controlling for the family-wise error rate,
+# which is the increased chance of making a Type I error when conducting multiple tests.
+# Thus, the Tukey HSD test is more conservative than running multiple t tests.
+# That's why the p values are "adjusted."
+
